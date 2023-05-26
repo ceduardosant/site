@@ -1,0 +1,126 @@
+ /*Propriedades da imagem*/
+ .propimg {                 
+    border-radius: 16px; /*Faz com que as bordas da imagem fiqeum arredondadas*/
+    width: 12%; /*Define a largura da imagem*/
+    padding: 2.5px; /*Adiciona amrgem ao redor das imagens*/
+    margin-bottom: 15px; /*Adiciona a margem inferior na imagem*/
+    
+}
+
+ /*Propriedades da imagem ao passar o mouse*/
+.propimg:hover {
+    transform: scale(1.2); /*Imagem aumentar quando se passar o mouse*/
+    transition: transform 0.2s; /*Velocidade em que a imagem aumenta*/
+    transform-origin: center center; /*Indica que o ponto de transformação da imagem irá começar em seu centro*/
+    cursor: pointer; /*Ao passar o mouse por cima, o ponteiro se transforma em mão*/
+}
+
+ /*Definor o tamanho do título e o negrito*/
+
+ /*
+ não esta funcionando...
+
+ .h1_dantas{
+    text-align: left;
+
+}
+
+.h1_dantas:hover {
+    color: #dddddd;
+    transform: scale(1.1);
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+}
+*/
+
+.ajustes{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.ajustes .h1_console::after {
+    content: '';
+    display: block;
+    width: 9.7rem;
+    height: 0.3rem;
+    background-color: rgba(255, 196, 0, 0.778);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.ajustes .h1_servico::after {
+    content: '';
+    display: block;
+    width: 9.1rem;
+    height: 0.3rem;
+    background-color: rgba(255, 196, 0, 0.778);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.ajustes .h1_mobile::after {
+    content: '';
+    display: block;
+    width: 7.1rem;
+    height: 0.3rem;
+    background-color: rgba(255, 196, 0, 0.778);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.ajustes .h1_pc::after {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 0.3rem;
+    background-color: rgba(255, 196, 0, 0.778);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.ajustes .h1_todos::after {
+    content: '';
+    display: block;
+    width: 7.1rem;
+    height: 0.3rem;
+    background-color: rgba(255, 196, 0, 0.778);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+/*Permite as imagens ficarem uma embaixo da outra*/
+.image-container {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.propimg {
+    display: inline-block;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    margin-right: 10px; /* Adicione margem entre as imagens conforme necessário */
+}
+
+.ajustes {
+    justify-content: center;
+}
+
