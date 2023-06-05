@@ -91,6 +91,18 @@ header {
     margin-right: 7px;
 }
 
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+
 .main a:hover {
     color: var(--main-color);
 }
@@ -123,13 +135,14 @@ header {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 29vh;
+        height: 40vh;
         background-color: var(--main-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 10px;
         transition: all .50s ease;
+        
     }
     .navbar a {
         display: block;
@@ -146,6 +159,7 @@ header {
     }
     .navbar.open {
         right: 2%;
+
     }
     
 }
@@ -167,6 +181,7 @@ body {
     background-position: center;
     justify-content: center;
     background-attachment: fixed;
+    padding-top: 70px;
 }
 
 #destaque {
@@ -368,7 +383,8 @@ body {
 
 /*Rodapé*/
 footer{
-    display:flex;
+    display: inline-flex;
+    align-items: center;
     width: 100%;
     height: 60px;
     clear: both;
@@ -376,16 +392,17 @@ footer{
     opacity: 0.6;
     justify-content: center;
     position: absolute;
-    bottom: 0;
-}
-
-.upfooter {
-    margin-top: 22px;
 }
 
 .slider ul li {
     display: inline-block;
   }
+
+@media (max-width: 1280px) {
+    .slider{
+        height: 100%;
+    }
+}
 
 
   
