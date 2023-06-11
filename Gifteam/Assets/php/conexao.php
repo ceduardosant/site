@@ -18,4 +18,5 @@ try {
 } catch (PDOException $e) {
     echo "Falha ao se conectar: " . $e->getMessage();
 }
+
 ?>

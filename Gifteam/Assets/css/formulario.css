@@ -339,7 +339,7 @@ main{
     color: #fff ;
 }
 
-.casdastro {
+.cadastro {
     color: white;
 }
 
@@ -354,6 +354,7 @@ main{
 }
 
 .form2{
+    height: 60vh;
     background-color: #000;
     margin-top: 70px;
     justify-content: center;

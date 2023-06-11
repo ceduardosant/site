@@ -11,6 +11,10 @@ try {
     $confirm_senha=$_POST['confirm_senha'];
     $genero=$_POST['genero'];
 
+    if($senha != $confirm_senha) {
+        die("As senhas digitadas não conferem!");
+    }
+
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -19,10 +23,10 @@ try {
 
    //variável $conectar vem do arquivo conexao.php
 
-   $sql=$conectar->prepare("INSERT INTO cu (prim_nome, sobrenome, email, celular, senha, confirm_senha, genero) VALUES ('$prim_nome', '$sobrenome', '$email', '$celular', '$senha', '$confirm_senha', '$genero')");
+   $sql=$conectar->prepare("INSERT INTO cu (prim_nome, sobrenome, email, celular, senha, genero) VALUES ('$prim_nome', '$sobrenome', '$email', '$celular', '$senha', '$genero')");
   
    $sql->execute();
-   header("location: ./html/cadastro.html");
+   header("location: ../html/cadastro.html");
 } catch (PDOException $e) {
     echo ("Erro: ". $e->getMessage());
 }
